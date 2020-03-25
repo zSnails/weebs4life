@@ -12,7 +12,7 @@ $ go get github.com/zSnails/weebs4life
 package main
 
 import (
-	"fmt"
+    "fmt"
     "github.com/zSnails/weebs4life"
 )
 
