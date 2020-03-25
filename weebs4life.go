@@ -11,7 +11,7 @@ type Weeb struct {
 	KEY string
 }
 
-//Hug get a hug from weebs for life
+//Hug get hugged owo
 func (w Weeb) Hug() (*Aweeb, error) {
 	var theWeeb Aweeb
 	resp, err := http.Get(weebURL + "/hug")
@@ -29,7 +29,7 @@ func (w Weeb) Hug() (*Aweeb, error) {
 	return &theWeeb, nil
 }
 
-//Kiss get a hug from weebs for life
+//Kiss get kissed uwu
 func (w Weeb) Kiss() (*Aweeb, error) {
 	var theWeeb Aweeb
 	resp, err := http.Get(weebURL + "/kiss")
@@ -47,7 +47,7 @@ func (w Weeb) Kiss() (*Aweeb, error) {
 	return &theWeeb, nil
 }
 
-//Neko get a hug from weebs for life
+//Neko get a neko from weebs for life
 func (w Weeb) Neko() (*Aweeb, error) {
 	var theWeeb Aweeb
 	resp, err := http.Get(weebURL + "/neko")
@@ -65,7 +65,7 @@ func (w Weeb) Neko() (*Aweeb, error) {
 	return &theWeeb, nil
 }
 
-//Slap get a hug from weebs for life
+//Slap get slapped lmao
 func (w Weeb) Slap() (*Aweeb, error) {
 	var theWeeb Aweeb
 	resp, err := http.Get(weebURL + "/slap")
