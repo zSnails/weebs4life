@@ -1,5 +1,5 @@
 # What is this?
-This is just a <i>smol</i> api wrapper for [weebs4life](https://weebs4life.ga`) an API to retrieve the most <i>weeb</i> shit you'd imagine (like srsly) 
+This is just a <i>smol</i> api wrapper for [weebs4life](https://weebs4life.ga) an API to retrieve the most <i>weeb</i> shit you'd imagine (like srsly) 
 
 # Installation
 ```bash
