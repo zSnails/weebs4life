@@ -17,7 +17,7 @@ import (
 )
 
 //Initialize the w e e b
-var weebClient = weebs4life.Weeb{}
+var weebClient = weebs4life.NewWeeb()
 
 func main() {
     //get a hug

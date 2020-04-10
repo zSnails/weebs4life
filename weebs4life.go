@@ -6,9 +6,14 @@ import (
 	"net/http"
 )
 
-//Weeb struct, this is the constructor
+//Weeb struct, this is the struct for it, at the moment there's no use for that 'key', but in the future there it'll be needed, due to the owner of weebs4life stating that they're gonna be adding api-key only endpoints
 type Weeb struct {
 	KEY string
+}
+
+//NewWeeb create a new instance of WeEb
+func NewWeeb() Weeb {
+	return Weeb{}
 }
 
 //Hug get hugged owo
