@@ -17,8 +17,7 @@ func NewWeeb() Weeb {
 }
 
 //Hug get hugged owo
-func (w Weeb) Hug() (*Aweeb, error) {
-	var theWeeb Aweeb
+func (w Weeb) Hug() (theWeeb *Aweeb, err error) {
 	resp, err := http.Get(weebURL + "/hug")
 	if err != nil {
 		return nil, err
@@ -32,12 +31,11 @@ func (w Weeb) Hug() (*Aweeb, error) {
 	if err != nil {
 		return nil, err
 	}
-	return &theWeeb, nil
+	return theWeeb, nil
 }
 
 //Kiss get kissed uwu
-func (w Weeb) Kiss() (*Aweeb, error) {
-	var theWeeb Aweeb
+func (w Weeb) Kiss() (theWeeb *Aweeb, err error) {
 	resp, err := http.Get(weebURL + "/kiss")
 	if err != nil {
 		return nil, err
@@ -51,12 +49,11 @@ func (w Weeb) Kiss() (*Aweeb, error) {
 	if err != nil {
 		return nil, err
 	}
-	return &theWeeb, nil
+	return theWeeb, nil
 }
 
 //Neko get a neko from weebs for life
-func (w Weeb) Neko() (*Aweeb, error) {
-	var theWeeb Aweeb
+func (w Weeb) Neko() (theWeeb *Aweeb, err error) {
 	resp, err := http.Get(weebURL + "/neko")
 	if err != nil {
 		return nil, err
@@ -70,12 +67,11 @@ func (w Weeb) Neko() (*Aweeb, error) {
 	if err != nil {
 		return nil, err
 	}
-	return &theWeeb, nil
+	return theWeeb, nil
 }
 
 //Slap get slapped lmao
-func (w Weeb) Slap() (*Aweeb, error) {
-	var theWeeb Aweeb
+func (w Weeb) Slap() (theWeeb *Aweeb, err error) {
 	resp, err := http.Get(weebURL + "/slap")
 	if err != nil {
 		return nil, err
@@ -89,5 +85,5 @@ func (w Weeb) Slap() (*Aweeb, error) {
 	if err != nil {
 		return nil, err
 	}
-	return &theWeeb, nil
+	return theWeeb, nil
 }
