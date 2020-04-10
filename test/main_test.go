@@ -7,33 +7,33 @@ import (
 )
 
 var (
-	wc = w4l.NewWeeb()
+	weebClient = w4l.NewWeeb()
 )
 
 //TestHug test a hug
 func TestHug(t *testing.T) {
-	_, err := wc.Hug()
+	_, err := weebClient.Hug()
 	if err != nil {
 		t.Error(err)
 	}
 }
 
 func TestNeko(t *testing.T) {
-	_, err := wc.Neko()
+	_, err := weebClient.Neko()
 	if err != nil {
 		t.Error(err)
 	}
 }
 
 func TestKiss(t *testing.T) {
-	_, err := wc.Slap()
-	if err == nil {
+	_, err := weebClient.Slap()
+	if err != nil {
 		t.Error(err)
 	}
 }
 
 func TestSlap(t *testing.T) {
-	_, err := wc.Slap()
+	_, err := weebClient.Slap()
 	if err != nil {
 		t.Error(err)
 	}
